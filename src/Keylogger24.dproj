@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d682b79f-4c27-4592-b19a-fb93605a55a2}</ProjectGuid>
+    <MainSource>Keylogger24.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Keylogger24.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">3</VersionInfo><VersionInfo Name="Build">22</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Spyrix Inc</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Keylogger 24</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.3.22</VersionInfoKeys><VersionInfoKeys Name="InternalName">Keylogger 24</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Spyrix Inc</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks">Super Keylogger</VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName">Keylogger 24</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.3.20</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Keylogger24.dpr</Source></Source></Delphi.Personality><ModelSupport>True</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Keylogger24.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="frmMain.pas">
+      <Form>Form1</Form>
+    </DCCReference>
+    <DCCReference Include="Unit2.pas">
+      <Form>Form_Settings</Form>
+    </DCCReference>
+    <DCCReference Include="Unit3.pas">
+      <Form>Form_About</Form>
+    </DCCReference>
+    <DCCReference Include="Unit4.pas">
+      <Form>Form_pwd</Form>
+    </DCCReference>
+    <None Include="ModelSupport_Keylogger24\ASP_info\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\frmMain\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\frmMain\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\KeybHook\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\KeybHook\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\Keylogger24\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\Unit2\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\Unit2\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\Unit3\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\Unit3\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\Unit4\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\Unit4\default.txvpck" />
+    <None Include="ModelSupport_Keylogger24\Unit5\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\winfuncs\default.txaPackage" />
+    <None Include="ModelSupport_Keylogger24\winfuncs\default.txvpck" />
+  </ItemGroup>
+</Project>
